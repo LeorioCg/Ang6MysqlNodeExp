@@ -14,9 +14,9 @@ export class UsuarioProvider {
     constructor( private http: HttpClient, private route: Router){
 
     }
-    //NECESSÁRIO CORRIGIR O ENDERECO DO SERVIDOR MYSQL....
+    //NECESSÁRIO SEMPRE CORRIGIR O ENDERECO DO SERVIDOR MYSQL....
     logar(usuario: Usuario){
-        this.http.get<Usuario[]>('http://localhost').subscribe(resp => {
+        this.http.get<Usuario[]>('http://localhost:3001/usuarios').subscribe(resp => {
             let logado: Usuario = resp.find((item) => {
                 return item.login == usuario.login && item.senha == usuario.senha
             })

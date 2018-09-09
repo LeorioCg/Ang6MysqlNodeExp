@@ -6,8 +6,7 @@ import { UsuarioProvider } from "./usuario-provider";
 
 @Component({
     selector: 'app-usuario',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    templateUrl: './usuario.component.html'   
   })
 
   export class UsuarioComponent implements OnInit {

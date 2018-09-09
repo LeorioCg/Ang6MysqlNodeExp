@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="col-md-12">
+        <form class="form-signin">
+            <div class="text-center mb-4">
+                <img class="rounded-rounded" src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Sonda_logo.svg/1200px-Sonda_logo.svg.png" width="160" height="130" alt="">
+                <h1 class="h3 mb-3 font-whegth-normal">Insira suas credenciais</h1>
+                <label for="login" class="sr-only">Insira seu Login</label>
+                <input type="text" class="form-control" placeholder="Insira seu Login" 
+                  required autofocus id="login" name="login" [(ngModel)]="usuario.login">
+                <label for="senha" class="sr-only">Digite a Senha</label>
+                <input type="password" class="form-control" placeholder="Digite a Senha" 
+                   required autofocus id="senha" name="senha" [(ngModel)]="usuario.senha"><br/>
+                <button class="btn btn-outline-primary" (click)="logar()">Entrar</button>
+                <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>       
+                <br/><br/>
+            </div>        
+        </form></div></div>
+    </div>
+
+</div>
